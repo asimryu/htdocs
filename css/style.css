@@ -48,3 +48,11 @@ nav > ul > li > ul > li {
 nav > ul > li > ul > li:hover {
 	background-color: #636363;
 }
+
+nav > ul > li > ul {
+	display: none;
+}
+
+nav > ul > li:hover ul {
+	display: block;
+}
