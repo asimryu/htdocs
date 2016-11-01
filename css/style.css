@@ -16,3 +16,27 @@ nav {
 	background-color: #4F4E52;
 	color: #FFF;
 }
+
+nav > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav > ul > li {
+	float: left;
+	width: 150px;
+	height: 50px;
+	color: #FFF;
+	line-height: 50px;
+	text-align: center;
+}
+nav > ul > li:hover {
+	background-color: #FF4D00;
+}
+nav > ul > li > a {
+	color:#FFF;
+	text-decoration: none;
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+}
