@@ -17,7 +17,7 @@ nav {
 	color: #FFF;
 }
 
-nav > ul {
+nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -33,10 +33,18 @@ nav > ul > li {
 nav > ul > li:hover {
 	background-color: #FF4D00;
 }
-nav > ul > li > a {
+nav > ul > li a {
 	color:#FFF;
 	text-decoration: none;
 	display: inline-block;
 	width: 150px;
 	height: 50px;
+}
+
+nav > ul > li > ul > li {
+	background-color: #4F4E52;
+}
+
+nav > ul > li > ul > li:hover {
+	background-color: #636363;
 }
