@@ -7,7 +7,6 @@ body {
 	margin: 0 auto;
 	width: 940px;
 	min-height: 500px;
-	background-color: #0f0;
 }
 
 nav {
@@ -77,4 +76,30 @@ header > img {
 
 header > img:first-child {
 	left: 0;
+}
+
+.contents, .contents > section {
+	width: 100%;
+	clear: both;
+}
+
+.contents > section {
+	margin: 20px 0;
+}
+
+.best > div {
+	float: left;
+	width: 33.333%;
+	height: 330px;
+	text-align: center;
+}
+.best img {
+	border-radius: 50%;
+}
+.best img:hover {
+	animation: bestani 0.5s;
+}
+@keyframes bestani {
+	from { transform:rotate(0deg); }
+	to {transform:rotate(360deg);}
 }

@@ -14,3 +14,12 @@ $("header").on("click",function(){
 var timer = setInterval(function(){
 	$("header").click();//트리거(방아쇠)
 },2000);
+
+$(".title").hover(
+	function(){
+		$(this).addClass("animated bounce");
+	},
+	function(){
+		$(this).removeClass("animated bounce");
+	}
+);
