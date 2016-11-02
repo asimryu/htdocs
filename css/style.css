@@ -139,3 +139,37 @@ header > img:first-child {
 .pointers .active {
 	color: #f00;
 }
+
+.dir-btn {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #000;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.dir-left, .dir-right {
+	top: 175px;
+}
+.dir-left {
+	left: 5px;
+}
+.dir-right {
+	right: 5px;
+}
+.dir-up, .dir-down {
+	left: 445px;
+}
+.dir-up {
+	top: 5px;
+	transform: rotate(90deg);
+}
+.dir-down {
+	bottom: 5px;
+	transform: rotate(90deg);
+}
