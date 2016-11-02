@@ -11,9 +11,33 @@ $("header").on("click",function(){
 	$( slides[sno] ).animate({"left":"0"},1000);
 });
 
-var timer = setInterval(function(){
-	$("header").click();//트리거(방아쇠)
-},2000);
+var timer = null; //전역(global) 변수 
+
+function start(){
+	if( timer != null ) return;
+	timer = setInterval(function(){
+		$("header").click();
+	},2000);
+	$(".timer-btn").text("중지");
+}
+
+function stop(){
+	if( timer == null ) return;
+	clearInterval(timer);
+	timer = null;
+	$(".timer-btn").text("시작");
+}
+
+start();
+
+$(".timer-btn").on("click",function(){
+	if( timer == null ) {
+		start();
+	} else {
+		stop();
+	}
+});
+
 
 $(".title").hover(
 	function(){
