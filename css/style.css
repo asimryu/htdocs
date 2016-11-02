@@ -125,3 +125,17 @@ header > img:first-child {
 	line-height: 50px;
 	cursor: pointer;
 }
+
+.pointers {
+	position: absolute;
+	width: 98%;
+	height: 20px;
+	left: 0;
+	bottom: 10px;
+	text-align: right;
+	color: #fff;
+}
+
+.pointers .active {
+	color: #f00;
+}

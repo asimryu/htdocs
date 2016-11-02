@@ -1,6 +1,13 @@
 var slides = $("header > img");
 var max = slides.length - 1;
 var sno = 0;
+var pointers = "";
+for( var i=0; i<=max; i++) {
+	pointers += "<span>●</span>";
+}
+$(".pointers").html(pointers);
+var pointerbtns = $(".pointers span");
+$(pointerbtns[sno]).addClass("active");
 
 $("header").on("click",function(){
 	$( slides[sno] ).animate({"left":"940px"},1000,function(){
@@ -8,7 +15,10 @@ $("header").on("click",function(){
 	});
 	sno++;
 	if( sno > max ) sno = 0;
-	$( slides[sno] ).animate({"left":"0"},1000);
+	$( slides[sno] ).animate({"left":"0"},1000,function(){
+		$(pointerbtns).removeClass("active");
+		$(pointerbtns[sno]).addClass("active");
+	});
 });
 
 var timer = null; //전역(global) 변수 
